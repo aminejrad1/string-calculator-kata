@@ -13,4 +13,9 @@ class StringCalculatorKataApplicationTests {
         assertEquals(0, Calculator.calculate(""));
     }
 
+    @Test
+    void testWith1NumberString() {
+        assertEquals(1, Calculator.calculate("1"));
+    }
+
 }
