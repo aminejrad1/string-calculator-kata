@@ -10,10 +10,11 @@ public class Calculator {
             return Integer.parseInt(s);
 
         int total = 0;
-        String[] stringArray = s.split(",");
+        String[] stringArray = s.split("\n");
 
         for (String value : stringArray) {
-            total += Integer.parseInt(value);
+            String[] array = value.split(",");
+            for (String item : array) total += Integer.parseInt(item);
         }
 
       return total;
